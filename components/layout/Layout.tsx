@@ -1,8 +1,24 @@
 
-const Layout = () => {
-  return (
-    <div>Layout</div>
-  )
-}
+import { ReactNode, useEffect } from "react";
+import { Footer, Header } from "..";
 
-export default Layout
+type ChildrenProps = {
+  children: ReactNode;
+};
+
+
+const Layout: React.FC<ChildrenProps > = ({ children }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <div>
+      <Header />
+      <div className="content font-mont">{children}</div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;
