@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 
+
 const Header = () => {
   const [showMenu, setShowMenu] = useState("sm:hidden");
   const menuItems = [
@@ -23,16 +24,17 @@ const Header = () => {
   const pathname = window.location.pathname;
 
   return (
-    <nav className="text-white font-mont fixed top-0 left-0 right-0 z-50">
+    <nav 
+        className="text-white font-mont fixed top-0 left-0 right-0 z-50">
       <div
-        className={`flex bg-gray-800 justify-between items-center p-2 shadow-lg ${
+        className={`flex bg-gray-800 justify-between items-center p-4 shadow-lg ${
           showMenu !== "sm:hidden" && "flex-col"
         }`}
-      >
-        <div className="flex justify-between w-full items-center">
+    >
+        <div className="flex justify-between w-full items-center ">
           <Link to="/">
             <h1 className="text-4xl font-semibold hover:text-yellow-500 cursor-pointer">
-              N A D
+              WD
             </h1>
           </Link>
           <FaBars
@@ -43,7 +45,7 @@ const Header = () => {
                 setShowMenu("sm:hidden");
               }
             }}
-            className=" lg:hidden xl:hidden md:hidden 2xl:hidden cursor-pointer"
+            className=" lg:hidden xl:hidden md:hidden 2xl:hidden 3xl:hidden cursor-pointer"
           />
         </div>
 
