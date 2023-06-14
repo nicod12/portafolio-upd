@@ -48,8 +48,8 @@ const Home = () => {
 
 
           
-        <article className="bg-gray-800 py-2 mt-44 mb-20">
-          <p className="text-xl text-white semi-bold text-center mb-2">
+        <article className="bg-gray-800 py-3 mt-44 mb-20">
+          <p className="text-xl 2xl:text-[30px] text-white semi-bold text-center mb-2">
               Good ideas are not adopted automatically. They must be driven into
               practice with corageous patience
           </p>
@@ -61,7 +61,7 @@ const Home = () => {
             Because
           </h3>
 
-        <article className="font-bold text-center bg-orange-600 mt-20 mx-20 sm:p-10 p-20 text-white rounded-tl-full rounded-br-full sm:mx-5">
+        <article className="w-[65%] sm:mt-24 sm:my-0 sm:mx-auto  my-0 mx-auto font-bold text-center bg-orange-600 mt-20  p-20 text-white rounded-tl-[8000px] rounded-br-[8000px]">
           <h1 className="text-8xl sm:text-2xl" data-aos="flip-left">
             THE GAME IS...
           </h1>
@@ -71,7 +71,7 @@ const Home = () => {
         </article>
 
         {/*Projects*/} 
-        <div className="my-28 text-center">
+        <div className="mt-28 mb-14 text-center">
           <h2 className="text-black  text-4xl 2xl:text-[50px] font-bold py-10 sm:my-10">
                 Projects
           </h2>

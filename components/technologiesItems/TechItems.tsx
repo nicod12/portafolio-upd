@@ -1,6 +1,9 @@
 import {SiTypescript, SiCss3,SiHtml5, SiJavascript, SiNodedotjs, SiReact, SiLinux, SiTailwindcss, SiGit} from "react-icons/si"
 
 const TechItems = () => {
+
+  const [mobile, setMobile] = ("sm");
+
   return (
     <>
        <article className="mt-20">
@@ -14,7 +17,7 @@ const TechItems = () => {
             <SiHtml5
                 size={120}
                 color="#E44D26"
-                className="w-full text-center mt-20 animate-bounce "
+                className={`${mobile ? "w-full text-center mt-20 " : "w-full text-center mt-20 animate-bounce"} `}
             />
             <SiCss3
               size={120}
@@ -24,7 +27,7 @@ const TechItems = () => {
             <SiJavascript
               size={120}
               color="#F0CF03"
-              className="w-full text-center mt-20 animate-bounce "
+              className={`${mobile ? "w-full text-center mt-20 " : "w-full text-center mt-20 animate-bounce"} `}
             />
             <SiReact
               size={120}
@@ -54,7 +57,7 @@ const TechItems = () => {
             <SiTailwindcss
               size={120}
               color="#49ABA4"
-              className="w-full text-center mt-20 animate-bounce"
+              className={`${mobile ? "w-full text-center mt-20 " : "w-full text-center mt-20 animate-bounce"} `}
             />
             <SiGit
               size={120}

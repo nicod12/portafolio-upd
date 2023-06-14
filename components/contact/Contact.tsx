@@ -7,9 +7,8 @@ const Contact = () => {
         window.scrollTo(0, 0);
       }, []);
       return (
-          <section>
+          <section className="mt-28 mb-36">
 
-    
             <article className="w-screen flex justify-center">
               <form className="sm:w-full w-1/2 p-10 shadow-2xl bg-gray-50">
                 <h1 className="text-2xl font-semibold">Contact me to know more</h1>
