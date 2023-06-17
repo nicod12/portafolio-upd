@@ -1,9 +1,9 @@
 import {
-  FaFacebook,
   FaInstagram,
   FaGithub,
   FaLinkedin,
   FaTwitter,
+  FaExternalLinkSquareAlt
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -21,31 +21,31 @@ const Footer = () => {
       <footer className="bg-gray-800 w-screen flex justify-center">
         <div className="sm:w-full w-1/2">
           <div className="p-10 font-mont text-center">
-            <p className="text-gray-50 pb-5">Designed and Developed By</p>
+            <p className="text-gray-50 pb-5 text-[15px] 2xl:text-[25px] 3xl:text-[25px]">Designed and Developed By</p>
             <div className="h-1 border-2 border-white border-dotted"></div>
 
-            <div className="flex text-white w-full justify-between py-3">
+            <div className="flex text-white w-full justify-center gap-32 py-4 2xl:text-[25px] 3xl:text-[25px]">
               <a href="https://www.linkedin.com/in/nicol%C3%A1s-dume-11b652185/">
                   <FaLinkedin />
               </a>
               <a href="https://github.com/nicod12">
                 <FaGithub />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100014116000645">
-                <FaFacebook />
+              <a href="http://linktr.ee/waitydev">
+                <FaExternalLinkSquareAlt />
               </a>
-              <a href="https://www.instagram.com/nicolas_dume/?hl=es-la">
+              <a href="https://www.instagram.com/wait1dev/">
                 <FaInstagram />
               </a>
 
-              <a href="https://twitter.com/DumeNicolas">
+              <a href="https://twitter.com/WaityDev">
                 <FaTwitter />
               </a>
             </div>
 
             <div className="h-1 border-2 border-gray-50 border-dotted"></div>
 
-            <p className="text-gray-50 my-2">Nicolás Dume</p>
+            <p className="text-gray-50 text-[20px] 2xl:text-[30px] 3xl:text-[30px] my-2">Nicolás Dume</p>
           </div>
         </div>
       </footer>

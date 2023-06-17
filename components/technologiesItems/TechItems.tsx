@@ -2,7 +2,6 @@ import {SiTypescript, SiCss3,SiHtml5, SiJavascript, SiNodedotjs, SiReact, SiLinu
 
 const TechItems = () => {
 
-  const [mobile, setMobile] = ("sm");
 
   return (
     <>
@@ -17,7 +16,7 @@ const TechItems = () => {
             <SiHtml5
                 size={120}
                 color="#E44D26"
-                className={`${mobile ? "w-full text-center mt-20 " : "w-full text-center mt-20 animate-bounce"} `}
+                className="w-full text-center mt-20"
             />
             <SiCss3
               size={120}
@@ -27,7 +26,7 @@ const TechItems = () => {
             <SiJavascript
               size={120}
               color="#F0CF03"
-              className={`${mobile ? "w-full text-center mt-20 " : "w-full text-center mt-20 animate-bounce"} `}
+              className="w-full text-center mt-20"
             />
             <SiReact
               size={120}
@@ -57,7 +56,7 @@ const TechItems = () => {
             <SiTailwindcss
               size={120}
               color="#49ABA4"
-              className={`${mobile ? "w-full text-center mt-20 " : "w-full text-center mt-20 animate-bounce"} `}
+              className="w-full text-center mt-20"
             />
             <SiGit
               size={120}
