@@ -42,7 +42,7 @@ const Carousel = () => {
         slidesToScroll: 1,
         arrows: true,
       };
-    
+
       return (
         <section className='my-0 mx-auto w-[300px] h-[450px] cursor-grab  border-[1px] border-gray-200 shadow-md'>
           <Slider {...settings}>
@@ -50,7 +50,7 @@ const Carousel = () => {
             {
               projects.map((project, index) => {
                 return(
-                  <article 
+                  <article
                     key={index}
                     className="h-[450px] w-[300px] bg-gray-600 "
                   >

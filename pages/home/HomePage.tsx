@@ -1,90 +1,75 @@
-import { useEffect } from "react";
-import { Contact, Layout, TechItems } from "../../components";
 import { Player } from "@lottiefiles/react-lottie-player";
 import AOS from "aos";
 import Carousel from "../../components/carousel/Carousel";
-
-
-
+import { useEffect } from "react";
+import { Techart } from "../../components";
 
 
 AOS.init({ duration: 1000 });
-const Home = () => {
-  useEffect(() => {;
+
+export const Home = () => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return (
-    <Layout>
-      <main>
-        {/* intro section */}
-        <section className="h-screen bg-gray-800">
-          <div
-            className="grid sm:grid-cols-1 grid-cols-2 h-screen items-center border-4 sm:border-0
-          mx-10 z-10 bg-gray-800
-          border-white transform rotate-12 sm:rotate-0"
-          >
-            <div className="h-1/2">
-              <Player
-                src="https://assets7.lottiefiles.com/packages/lf20_rhe84poa.json"
-                background="transparent"
-                speed={1}
-                loop
-                autoplay
-              ></Player>
-            </div>
 
-            <div className="font-bold text-white sm:px-5">
-              <h1 className="text-7xl 2xl:text:[90px] sm:text-4xl sm:w-auto" data-aos="slide-right">
-                Hii , I am <span className="text-orange-500">NICOLÁS</span>
-              </h1>
-              <h2 className="text-4xl 2xl:text[60px] sm:text-xl sm:w-auto" data-aos="slide-left">
-                Front End <span className="text-red-600">Developer</span>
-              </h2>
-            </div>
+  return (
+    <section>
+       <section className=" h-screen bg-gray-800 w-full">
+         <div className="grid sm:grid-cols-1 md:grid-cols-1 grid-cols-2 h-screen items-center border-4 sm:border-0 md:border-0
+          mx-10 z-10 bg-gray-800
+          border-white transform rotate-12 sm:rotate-0 md:rotate-0">
+           <div className="h-1/2" >
+             <Player
+               src="https://assets7.lottiefiles.com/packages/lf20_rhe84poa.json"
+               background="transparent"
+               speed={1}
+               loop
+               autoplay
+             ></Player>
+           </div>
+           <div className="font-bold text-white sm:px-5">
+            <h1 className="text-7xl sm:text-4xl" data-aos="slide-right" data-aos-once="true" data-aos-duration="500">
+              ¡Hola! Soy <span className="text-orange-500">NICOLÁS</span>
+            </h1>
+            <h1 className="text-4xl sm:text-xl" data-aos="slide-left" data-aos-once="true" data-aos-duration="500">
+              Desarrollador <span className="text-red-600">Front End</span>
+            </h1>
+          </div>
           </div>
         </section>
-        {/* technologies */}
-          <TechItems />
 
+       <Techart />
 
-          
-        <article className="bg-gray-800 py-3 mt-44 mb-20">
-          <p className="text-xl 2xl:text-[30px] text-white semi-bold text-center mb-2">
-              Good ideas are not adopted automatically. They must be driven into
-              practice with corageous patience
-          </p>
-        </article>
-          <h3
-            className="text-4xl 2xl:text-[50px] text-center font-bold mt-5"
-            data-aos="slide-up"
-          >
-            Because
-          </h3>
+      <article className="bg-gray-800 w-full py-3 mt-10 sm:mt-44 mb-20">
+       <p className="text-xl sm:text-[20px] text-white font-semibold text-center mb-2 p-2">
+            Las buenas ideas no se adoptan automáticamente. Se deben poner en práctica con valentía, paciencia y perseverancia.
+       </p>
+      </article>
+      <h3
+        className="text-[40px] sm:text-[25px] text-50px text-center font-bold my-36"
+        data-aos="slide-up"
+      >
+        Porque...
+      </h3>
 
-        <article className="w-[65%] sm:mt-24 sm:my-0 sm:mx-auto  my-0 mx-auto font-bold text-center bg-orange-600 mt-20  p-20 text-white rounded-tl-[8000px] rounded-br-[8000px]">
-          <h1 className="text-8xl sm:text-2xl" data-aos="flip-left">
-            THE GAME IS...
-          </h1>
-          <h1 className="text-8xl sm:text-2xl" data-aos="flip-right">
-            CONSISTANCY
-          </h1>
-        </article>
+      <article className="w-[70%] sm:w-3/5 sm:mt-24 sm:my-0 sm:mx-auto my-0 mx-auto font-bold text-center bg-orange-600 mt-20 p-14 sm:p-20 text-white rounded-tl-full rounded-br-full">
+        <h1 className="text-6xl sm:text-2xl" data-aos="flip-left">
+             EL JUEGO ES...
+        </h1>
+        <h1 className="text-6xl sm:text-2xl" data-aos="flip-right">
+            CONSTANCIA
+        </h1>
+      </article>
 
-        {/*Projects*/} 
-        <div className="mt-28 mb-14 text-center">
-          <h2 className="text-black  text-4xl 2xl:text-[50px] font-bold py-10 sm:my-10">
-                Projects
-          </h2>
-        </div>
+      <div className="mt-10 text-center">
+        <h2 className="text-black text-[40px] sm:text-[25px] font-bold py-10 sm:my-10">
+         Proyectos
+        </h2>
+      </div>
 
-        <Carousel />
-      
-        {/* Dev contact */}
-        <Contact />
-       
-      </main>
-    </Layout>
+      <Carousel />
+    </section>
   );
 };
 
-export default Home;
+

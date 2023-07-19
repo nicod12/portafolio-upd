@@ -6,10 +6,10 @@ import {
   FaExternalLinkSquareAlt
 } from "react-icons/fa";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <>
-      <div className="h-44 sm:h-6">
+      <div className="h-44 sm:h-6 mt-36">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#1b2a37"
@@ -53,4 +53,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+
