@@ -14,7 +14,7 @@ export const Home = () => {
 
   return (
     <section>
-       <section className=" h-screen bg-gray-800 w-full">
+       <section id="container" className=" h-screen bg-gray-800 w-full">
          <div className="grid sm:grid-cols-1 md:grid-cols-1 grid-cols-2 h-screen items-center border-4 sm:border-0 md:border-0
           mx-10 z-10 bg-gray-800
           border-white transform rotate-12 sm:rotate-0 md:rotate-0">
@@ -61,7 +61,7 @@ export const Home = () => {
         </h1>
       </article>
 
-      <div className="mt-10 text-center">
+      <div id="proyectos" className="mt-10 text-center">
         <h2 className="text-black text-[40px] sm:text-[25px] font-bold py-10 sm:my-10">
          Proyectos
         </h2>

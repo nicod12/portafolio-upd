@@ -5,29 +5,30 @@ import "slick-carousel/slick/slick-theme.css";
 
 interface Projects {
   id:number,
-  img:string,
-  title:string,
   description:string,
+  backgoundImg:string
 }
 
-const projects: Projects[] = [ 
+const projects: Projects[] = [
   {
     id: 1,
-    img: "https://i.postimg.cc/L4kWCv9c/game.png",
-    title:"Games",
-    description:"A Games application developed with react, webpack, babel and tailwind."
+    description:"Una excelente app que te permite organizar mejor tus tareas, desarrolada con react, typescript, todomvc-app-css.",
+    backgoundImg: "https://i.pinimg.com/564x/01/ec/26/01ec260b1f6bbb008989dc1dddbf9a9c.jpg"
   },
   {
     id: 2,
-    img: "https://i.postimg.cc/L4kWCv9c/game.png",
-    title:"Games",
-    description:"A Games application developed with react, webpack, babel and tailwind."
+    description:"Una aplicación de juegos desarrollada con React, webpack, babel y tailwind.",
+    backgoundImg: "https://i.pinimg.com/564x/90/f7/11/90f71115f7c1c74eeab3e2e8a59478d1.jpg"
   },
   {
     id: 3,
-    img: "https://i.postimg.cc/L4kWCv9c/game.png",
-    title:"Games",
-    description:"A Games application developed with react, webpack, babel and tailwind."
+    description:"Una demo web creada con react, typescript, tailwind.",
+    backgoundImg:"https://i.pinimg.com/564x/de/79/fc/de79fcbb6777f77614089152831c9d13.jpg"
+  },
+  {
+    id: 4,
+    description:"El clasico juego del ahorcado desarrolado con react y typescript",
+    backgoundImg:"https://i.pinimg.com/564x/50/9a/99/509a995c6ef3141f8681ba8af297637f.jpg"
   }
 ]
 
@@ -52,17 +53,14 @@ const Carousel = () => {
                 return(
                   <article
                     key={index}
-                    className="h-[450px] w-[300px] bg-gray-600 "
+                    className="h-[450px] w-[300px] bg-gray-600 relative "
                   >
-                    <img className="relative top-8 w-full h-52 text-center" src={project.img} alt="Image 1" />
 
-                      <h3 className='text-center mb-4'>{project.title}</h3>
-                      <p className='text-center p-2'>{project.description}</p>
-
-
-                      <div className='flex items-center justify-center flex-col mt-5'>
-                       <button className='bg-red-300 w-[33.3%] py-1'>Demo</button>
+                    <img className="text-center bg-cover bg-no-repeat bg-center bg-fixed absolute w-full h-full" src={project.backgoundImg} alt="Image 1" />
+                      <div className='absolute top-[50%] -translate-y-[50%] w-full bg-transparent backdrop-blur-[15px]'>
+                        <p className='text-center font-bold  text-orange-700 bottom-0 top-full p-2'>{project.description}</p>
                       </div>
+                       <button className='bg-orange-600 hover:bg-orange-500 hover:transition text-white rounded-md top-[68%] -translate-y-[68%] left-[50%] -translate-x-[50%] absolute w-[33.3%] py-1'>Demo</button>
                   </article>
                 )
               })
@@ -72,4 +70,4 @@ const Carousel = () => {
       );
 }
 
-export default Carousel
+export default Carousel;
