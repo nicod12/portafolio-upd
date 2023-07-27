@@ -49,7 +49,7 @@ export const Home = () => {
         className="text-[40px] sm:text-[25px] text-50px text-center font-bold my-36"
         data-aos="slide-up"
       >
-        Porque...
+        Porque....
       </h3>
 
       <article className="w-[70%] sm:w-3/5 sm:mt-24 sm:my-0 sm:mx-auto my-0 mx-auto font-bold text-center bg-orange-600 mt-20 p-14 sm:p-20 text-white rounded-tl-full rounded-br-full">
