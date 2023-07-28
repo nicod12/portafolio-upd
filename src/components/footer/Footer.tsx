@@ -24,7 +24,7 @@ export const Footer = () => {
             <p className="text-gray-50 pb-5 text-[15px] 2xl:text-[25px] 3xl:text-[25px]">Designed and Developed By</p>
             <div className="h-1 border-2 border-white border-dotted"></div>
 
-            <div className="flex text-white w-full justify-center sm:gap-16 md:gap-16 gap-32 py-4 2xl:text-[25px] 3xl:text-[25px]">
+            <div className="flex text-white w-full justify-center sm:gap-16 md:gap-16 lg:gap-20 xl:gap-24 gap-32 py-4 2xl:text-[25px] 3xl:text-[25px]">
               <a href="https://www.linkedin.com/in/nicol%C3%A1s-dume-11b652185/">
                   <FaLinkedin />
               </a>
